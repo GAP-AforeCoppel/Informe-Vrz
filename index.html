@@ -21,6 +21,14 @@
                 margin: 0.5cm;
             }
         }
+        /* Estilo para que las imágenes con link se vean interactivas */
+        a.image-link {
+            display: block;
+            transition: opacity 0.2s;
+        }
+        a.image-link:hover {
+            opacity: 0.9;
+        }
     </style>
 
     <script>
@@ -60,7 +68,7 @@
     <!-- Main Content -->
     <main class="max-w-7xl mx-auto p-6 mt-4">
 
-        <!-- KPI Section (Bottom Line Up Front) -->
+        <!-- KPI Section -->
         <section class="grid grid-cols-1 md:grid-cols-4 gap-4 mb-8">
             <div class="bg-white p-6 rounded-lg shadow border-l-4 border-coppelBlue">
                 <p class="text-sm text-gray-500 font-semibold uppercase">Línea Base (Días 01-15)</p>
@@ -84,7 +92,6 @@
             </div>
         </section>
 
-        <!-- Contenedor Principal Ajustado: cards compactas abrazando su contenido -->
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
             
             <!-- Fase 1: Detección -->
@@ -98,7 +105,9 @@
                     </p>
                 </div>
                 <div class="rounded overflow-hidden mt-4 border border-gray-200">
-                    <img src="https://lh3.googleusercontent.com/d/1uovTw3EjemKu992Ob3I9KAZ0vvTd7qw6" onerror="this.onerror=null; this.src='https://placehold.co/800x400/e2e8f0/475569?text=Mapa+de+Calor+Veracruz'" alt="Mapa de Calor Veracruz" class="w-full h-64 object-cover">
+                    <a href="https://drive.google.com/file/d/1uovTw3EjemKu992Ob3I9KAZ0vvTd7qw6/view?usp=drive_link" target="_blank" class="image-link" title="Ver mapa original en Drive">
+                        <img src="https://lh3.googleusercontent.com/d/1uovTw3EjemKu992Ob3I9KAZ0vvTd7qw6" onerror="this.onerror=null; this.src='https://placehold.co/800x400/e2e8f0/475569?text=Mapa+de+Calor+Veracruz'" alt="Mapa de Calor Veracruz" class="w-full h-64 object-cover">
+                    </a>
                 </div>
             </div>
 
@@ -135,7 +144,9 @@
                     </ul>
                 </div>
                 <div class="rounded overflow-hidden mt-4 border border-gray-200 bg-gray-50">
-                    <img src="https://lh3.googleusercontent.com/d/1IVaZwKS59PlpKKI43yBHlpRgcL8WdyjM" onerror="this.onerror=null; this.src='https://placehold.co/800x400/e2e8f0/475569?text=Interfaz+de+Herramienta+Web'" alt="Interfaz de Herramienta Web de Retención" class="w-full h-48 object-cover object-left-top">
+                    <a href="https://drive.google.com/file/d/1IVaZwKS59PlpKKI43yBHlpRgcL8WdyjM/view?usp=drive_link" target="_blank" class="image-link" title="Ver herramienta original en Drive">
+                        <img src="https://lh3.googleusercontent.com/d/1IVaZwKS59PlpKKI43yBHlpRgcL8WdyjM" onerror="this.onerror=null; this.src='https://placehold.co/800x400/e2e8f0/475569?text=Interfaz+de+Herramienta+Web'" alt="Interfaz de Herramienta Web de Retención" class="w-full h-48 object-cover object-left-top">
+                    </a>
                 </div>
             </div>
 
