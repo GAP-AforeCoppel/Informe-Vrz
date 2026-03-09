@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resumen Ejecutivo - Iniciativa de Retención</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    
+    <style>
+        /* Reglas para asegurar que el PDF mantenga los colores exactos y oculte botones */
+        @media print {
+            body {
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+            .print\:hidden {
+                display: none !important;
+            }
+            @page {
+                margin: 0.5cm;
+            }
+        }
+    </style>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        coppelBlue: '#005baa',
+                        coppelYellow: '#ffcd00',
+                        lightBlue: '#e6f0fa',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+    <!-- Header -->
+    <header class="bg-coppelBlue text-white p-6 shadow-md print:shadow-none">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div>
+                <h1 class="text-3xl font-bold">Iniciativa Estratégica de Retención</h1>
+                <p class="text-blue-200 mt-1 text-lg">Acciones estratégicas y modernización de gestión focalizadas en el estado de Veracruz</p>
+            </div>
+            <div class="hidden md:flex items-center gap-3">
+                <button onclick="window.print()" title="Guardar como PDF" class="text-blue-200 hover:text-white hover:bg-blue-800 p-2 rounded-full transition-colors print:hidden flex items-center justify-center">
+                    <i class="fas fa-download text-xl"></i>
+                </button>
+                <span class="bg-coppelYellow text-coppelBlue font-bold py-2 px-4 rounded-full">
+                    <i class="fas fa-chart-line mr-2"></i>Informe de acciones y primeros resultados
+                </span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-7xl mx-auto p-6 mt-4">
+
+        <!-- KPI Section (Bottom Line Up Front) -->
+        <section class="grid grid-cols-1 md:grid-cols-4 gap-4 mb-8">
+            <div class="bg-white p-6 rounded-lg shadow border-l-4 border-coppelBlue">
+                <p class="text-sm text-gray-500 font-semibold uppercase">Línea Base (Días 01-15)</p>
+                <p class="text-3xl font-bold mt-2 text-gray-800">15.53%</p>
+                <p class="text-xs text-gray-400 mt-1">Tasa de retención previa</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow border-l-4 border-coppelBlue">
+                <p class="text-sm text-gray-500 font-semibold uppercase">Nuevo Modelo (Días 16-28)</p>
+                <p class="text-3xl font-bold mt-2 text-gray-800">19.60%</p>
+                <p class="text-xs text-gray-400 mt-1">Con nueva herramienta</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow border-l-4 border-coppelBlue">
+                <p class="text-sm text-gray-500 font-semibold uppercase">Crecimiento Neto</p>
+                <p class="text-3xl font-bold mt-2 text-gray-800">+4.07 p.p</p>
+                <p class="text-xs text-gray-400 mt-1">Mejora en tasa de retención</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow border-l-4 border-coppelBlue">
+                <p class="text-sm text-gray-500 font-semibold uppercase">Universo Impactado</p>
+                <p class="text-3xl font-bold mt-2 text-gray-800">2,868</p>
+                <p class="text-xs text-gray-400 mt-1">Trámites gestionados en total</p>
+            </div>
+        </section>
+
+        <!-- Contenedor Principal Ajustado: cards compactas abrazando su contenido -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+            
+            <!-- Fase 1: Detección -->
+            <div class="bg-white p-6 rounded-lg shadow">
+                <div>
+                    <h2 class="text-xl font-bold text-coppelBlue border-b pb-2 mb-4 flex items-center">
+                        <i class="fas fa-search mr-2"></i> 1. Detección de Oportunidad
+                    </h2>
+                    <p class="text-gray-600 mb-4">
+                        Durante el cierre del Q4, el análisis de tableros de control reveló una concentración crítica de intentos de traspaso. <strong>Veracruz se posicionó como el Top 1</strong> a nivel nacional con 8,872 solicitudes de salida. Esto nos indicó dónde debíamos focalizar un esfuerzo de contención inmediato.
+                    </p>
+                </div>
+                <div class="rounded overflow-hidden mt-4 border border-gray-200">
+                    <img src="https://lh3.googleusercontent.com/d/1uovTw3EjemKu992Ob3I9KAZ0vvTd7qw6" onerror="this.onerror=null; this.src='https://placehold.co/800x400/e2e8f0/475569?text=Mapa+de+Calor+Veracruz'" alt="Mapa de Calor Veracruz" class="w-full h-64 object-cover">
+                </div>
+            </div>
+
+            <!-- Fase 2: Estrategia -->
+            <div class="bg-white p-6 rounded-lg shadow">
+                <h2 class="text-xl font-bold text-coppelBlue border-b pb-2 mb-4 flex items-center">
+                    <i class="fas fa-chess-knight mr-2"></i> 2. Benchmark
+                </h2>
+                <p class="text-gray-600 mb-4">
+                    Realizamos una investigación comparativa (Benchmark) frente al gremio de administradoras, identificando nuestras principales ventajas competitivas como AforeCoppel, con especial enfoque en el estado de Veracruz:
+                </p>
+                <ul class="list-disc pl-5 text-gray-600 space-y-2 mb-4 text-sm">
+                    <li><strong>Presencia en el Estado:</strong> Mayor cobertura y disponibilidad de módulos de atención en Veracruz frente al resto de las administradoras.</li>
+                    <li><strong>Atención Ágil:</strong> Tiempos de atención eficientes respaldados y declarados en nuestras cartas de derechos.</li>
+                    <li><strong>Amplios Horarios:</strong> Liderazgo en cobertura de horarios de servicio para mayor comodidad y accesibilidad del cliente.</li>
+                    <li><strong>Protocolo Adultos Mayores:</strong> Implementación de nuestra insignia de prioridad y trato especializado para adultos mayores.</li>
+                    <li><strong>Monitor Consar:</strong> Aval institucional que nos posiciona oficialmente como la segunda mejor administradora en calidad, eficacia y eficiencia operativa.</li>
+                </ul>
+            </div>
+
+            <!-- Fase 3: Innovación Tecnológica -->
+            <div class="bg-white p-6 rounded-lg shadow">
+                <div>
+                    <h2 class="text-xl font-bold text-coppelBlue border-b pb-2 mb-4 flex items-center">
+                        <i class="fas fa-laptop-code mr-2"></i> 3. Innovación para ejecución de diálogos CAT
+                    </h2>
+                    <p class="text-gray-600 mb-4">
+                        Los ejecutivos CAT actualmente abordan las llamadas por una guía de un documento PDF. Como parte de esta iniciativa, innovamos desarrollando un portal web interactivo con apoyo de IA. Esta herramienta tecnológica nos permite ejecutar una estrategia de retención más proactiva y contundente, enfocada en capitalizar nuestros beneficios y brindando al ejecutivo telefónico una guía dinámica que optimiza el abordaje de cada llamada:
+                    </p>
+                    <ul class="list-disc pl-5 text-gray-600 space-y-2 mb-4 text-sm">
+                        <li><strong>Selección dinámica:</strong> Adaptación automática de los argumentos de acuerdo con la administradora destino seleccionada.</li>
+                        <li><strong>Scripts en tiempo real:</strong> Generación de diálogos de retención al momento, enfocados en rebatir objeciones resaltando nuestros beneficios.</li>
+                        <li><strong>Zona de "rescate":</strong> Estrategia de contención estructurada para el manejo de segundas negativas, buscando maximizar el cierre.</li>
+                    </ul>
+                </div>
+                <div class="rounded overflow-hidden mt-4 border border-gray-200 bg-gray-50">
+                    <img src="https://lh3.googleusercontent.com/d/1IVaZwKS59PlpKKI43yBHlpRgcL8WdyjM" onerror="this.onerror=null; this.src='https://placehold.co/800x400/e2e8f0/475569?text=Interfaz+de+Herramienta+Web'" alt="Interfaz de Herramienta Web de Retención" class="w-full h-48 object-cover object-left-top">
+                </div>
+            </div>
+
+            <!-- Fase 4: Resultados A/B -->
+            <div class="bg-white p-6 rounded-lg shadow">
+                <div>
+                    <h2 class="text-xl font-bold text-coppelBlue border-b pb-2 mb-4 flex items-center">
+                        <i class="fas fa-chart-bar mr-2"></i> 4. Resultados del Ejercicio (Antes vs Después)
+                    </h2>
+                    <p class="text-gray-600 mb-4">
+                        Se implementó un esquema de medición de 4 semanas (2 previas sin herramienta vs 2 con la nueva herramienta), obteniendo una validación positiva del nuevo modelo.
+                    </p>
+                    
+                    <div class="overflow-x-auto border border-gray-200 rounded-lg shadow-sm">
+                        <table class="w-full text-xs md:text-sm text-center">
+                            <thead class="bg-lightBlue text-coppelBlue leading-tight border-b border-gray-200">
+                                <tr>
+                                    <th class="py-2 px-1 md:px-2 text-left">Periodos</th>
+                                    <th class="py-2 px-1 md:px-2">Universo</th>
+                                    <th class="py-2 px-1 md:px-2" title="Retención Activa">Cancelado<br>Cliente</th>
+                                    <th class="py-2 px-1 md:px-2" title="Retención Pasiva">No<br>Confirmó</th>
+                                    <th class="py-2 px-1 md:px-2">Traspasado</th>
+                                    <th class="py-2 px-1 md:px-2 font-bold text-base">% Retención</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-gray-200">
+                                <tr class="bg-white hover:bg-gray-50">
+                                    <td class="py-3 px-1 md:px-2 text-left text-gray-800 font-medium">Modelo Anterior</td>
+                                    <td class="py-3 px-1 md:px-2 text-gray-800">1,088</td>
+                                    <td class="py-3 px-1 md:px-2 text-gray-800">11</td>
+                                    <td class="py-3 px-1 md:px-2 text-gray-800">158</td>
+                                    <td class="py-3 px-1 md:px-2 text-gray-800">919</td>
+                                    <td class="py-3 px-1 md:px-2 font-bold text-gray-800">15.53%</td>
+                                </tr>
+                                <tr class="bg-green-50 hover:bg-green-100">
+                                    <td class="py-3 px-1 md:px-2 text-left text-coppelBlue font-bold">Modelo Experimento</td>
+                                    <td class="py-3 px-1 md:px-2 font-semibold text-gray-800">1,780</td>
+                                    <td class="py-3 px-1 md:px-2 font-semibold text-gray-800">23</td>
+                                    <td class="py-3 px-1 md:px-2 font-semibold text-gray-800">326</td>
+                                    <td class="py-3 px-1 md:px-2 font-semibold text-gray-800">1,431</td>
+                                    <td class="py-3 px-1 md:px-2 font-bold text-gray-800 text-base">19.60%</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>
